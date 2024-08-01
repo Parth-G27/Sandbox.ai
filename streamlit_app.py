@@ -12,8 +12,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
-
 # Set up API keys
 os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
