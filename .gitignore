@@ -3,3 +3,5 @@
 
 # Ignore secrets.toml
 secrets.toml
+
+.streamlit
