@@ -13,9 +13,9 @@ nest_asyncio.apply()
 load_dotenv()
 
 # Set up API keys
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+os.environ["GOOGLE_API_KEY"] = st.secrets("GOOGLE_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_API_KEY"] = st.secrets("LANGCHAIN_API_KEY")
 
 
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest")
